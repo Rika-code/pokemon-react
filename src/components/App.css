@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ .header {
+background-color: #61dafb;
+padding: 10px;
+
+ }
+
+ .headerh1 {
+  text-align: center;
+ }
+
+ .headerul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap : 100px;
+  font-size: x-large;
+ }
+
+.headerimg {
+  width: 10%;
+}
+
+.mainhome {
+  text-align: center;
+  color: red;
+  padding: 15%;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4136f5a2-0f2c-42b8-b652-d16bfffe1723/dcpml0x-803a902e-e04b-4d13-9a27-fe1a38cb5945.jpg/v1/fill/w_900,h_884,q_75,strp/new_logo_pokeball_1_by_creeperart1980_dcpml0x-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODg0IiwicGF0aCI6IlwvZlwvNDEzNmY1YTItMGYyYy00MmI4LWI2NTItZDE2YmZmZmUxNzIzXC9kY3BtbDB4LTgwM2E5MDJlLWUwNGItNGQxMy05YTI3LWZlMWEzOGNiNTk0NS5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.qpirdA7PlnP4wZLgzkuQxGUt41pCstu-Y8F21HLqg3M");
+}
+
+.pokemonsmain {
+  text-align: center;
+  font-size: x-large;
+  color: rgb(2, 65, 2);
+  background-color: greenyellow;
+}
