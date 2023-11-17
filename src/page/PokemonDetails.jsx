@@ -1,6 +1,6 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Header from "../components/Header"
-function Pokemon () {
+function PokemonDetails () {
     const pokemons = [
         {
           id: 1,
@@ -66,30 +66,23 @@ function Pokemon () {
           isInTeam: true,
         },
       ];
+    
 
-      const pokemonsInTeam = pokemons.filter((pokemon) => {
-        return pokemon.isInTeam === true;
-      });
-  
-      return(        
-        <>
-                <main className="pokemonsmain">
-                  <h1>Moi et ma team on est dans le game!</h1>
-                    {pokemonsInTeam.map((pokemon) => {
-                        return(
-                          <Link to ={"/pokemon/" + pokemon.id + "/details"}>
-                            <article>
-                                <img className="pokemonsimg" src={pokemon.img} alt= "Image des pokemons"></img>
-                                <p>{pokemon.name}</p>
-                            </article>
-                            </Link>
-                        )
-                    })}
-                </main>
-        </>
-    )
+const {pokemonId} = useParams();
+console.log(pokemonId)
+const pokemontoDisplay = pokemons.find((pokemon) => {
+return pokemon.id == pokemonId;
+})
+
+return (
+    <>
+    <Header/>
+    <main>
+        <h1>Détails du Pokémon : </h1>
+        <h2>{pokemontoDisplay.name}</h2>
+        <img src={pokemontoDisplay.img} alt={pokemontoDisplay.name}/>
+      </main>
+    </>
+)
 }
-
-
-
-export default Pokemon
+export default PokemonDetails
