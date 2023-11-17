@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import '../src/components/App.css';
 import Home from "./page/Home"
-import Pokemon from "./page/Pokemon"
+import Pokemon from "../src/components/Pokemon"
 import PokemonDetails from './page/PokemonDetails';
 import TrainerDetails from './page/TrainersDetails';
 
