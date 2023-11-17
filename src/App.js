@@ -4,6 +4,7 @@ import '../src/components/App.css';
 import Home from "./page/Home"
 import Pokemon from "./page/Pokemon"
 import PokemonDetails from './page/PokemonDetails';
+import TrainerDetails from './page/TrainersDetails';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
   <Route path = "/" element = {<Home/>}/>
   <Route path = "/pokemon" element = {<Pokemon/>}/>
   <Route path ="/pokemon/:pokemonId/details" element = {<PokemonDetails/>}/>
+  <Route path ="/trainers/:trainersid/details" element = {<TrainerDetails/>}/>
 </Routes>
 </BrowserRouter>
   );
